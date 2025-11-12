@@ -1,10 +1,10 @@
-name: Teste Microservices
+name: Test Microservices
 
 on:
   push:
-    branches: [main]
+    branches: [aula-01]
   pull_request:
-    branches: [main]
+    branches: [aula-01]
 
 jobs:
   test-auth-service:
@@ -13,10 +13,10 @@ jobs:
       - name: Checkout de código
         uses: actions/checkout@v4
 
-      - name: Configurar Python 3.12.4
+      - name: Configurar Python 3.13.5
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12.4'
+          python-version: '3.13.5'
 
       - name: Install dependencies
         working-directory: ./burguer-app/auth-service
@@ -35,10 +35,10 @@ jobs:
       - name: Checkout de código
         uses: actions/checkout@v4
 
-      - name: Configurar Python 3.12.4
+      - name: Configurar Python 3.13.5
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12.4'
+          python-version: '3.13.5'
 
       - name: Install dependencies
         working-directory: ./burguer-app/order-service
@@ -57,10 +57,10 @@ jobs:
       - name: Checkout de código
         uses: actions/checkout@v4
 
-      - name: Configurar Python 3.12.4
+      - name: Configurar Python 3.13.5
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12.4'
+          python-version: '3.13.5'
 
       - name: Install dependencies
         working-directory: ./burguer-app/product-service
@@ -79,10 +79,10 @@ jobs:
       - name: Checkout de código
         uses: actions/checkout@v4
 
-      - name: Configurar Python 3.12.4
+      - name: Configurar Python 3.13.5
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12.4'
+          python-version: '3.13.5'
 
       - name: Install dependencies
         working-directory: ./burguer-app/user-service
